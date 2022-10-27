@@ -1,0 +1,77 @@
+D:\University\Kurs 3\TSP\Library\TSPLibrary\TSPLibrary\bin\Debug\netcoreapp3.1\TSPLibrary.exe
+D:\University\Kurs 3\TSP\Library\TSPLibrary\TSPLibrary\bin\Debug\netcoreapp3.1\TSPLibrary.deps.json
+D:\University\Kurs 3\TSP\Library\TSPLibrary\TSPLibrary\bin\Debug\netcoreapp3.1\TSPLibrary.runtimeconfig.json
+D:\University\Kurs 3\TSP\Library\TSPLibrary\TSPLibrary\bin\Debug\netcoreapp3.1\TSPLibrary.runtimeconfig.dev.json
+D:\University\Kurs 3\TSP\Library\TSPLibrary\TSPLibrary\bin\Debug\netcoreapp3.1\TSPLibrary.dll
+D:\University\Kurs 3\TSP\Library\TSPLibrary\TSPLibrary\bin\Debug\netcoreapp3.1\TSPLibrary.pdb
+D:\University\Kurs 3\TSP\Library\TSPLibrary\TSPLibrary\bin\Debug\netcoreapp3.1\Microsoft.Win32.Registry.dll
+D:\University\Kurs 3\TSP\Library\TSPLibrary\TSPLibrary\bin\Debug\netcoreapp3.1\Microsoft.Win32.SystemEvents.dll
+D:\University\Kurs 3\TSP\Library\TSPLibrary\TSPLibrary\bin\Debug\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
+D:\University\Kurs 3\TSP\Library\TSPLibrary\TSPLibrary\bin\Debug\netcoreapp3.1\System.Data.OleDb.dll
+D:\University\Kurs 3\TSP\Library\TSPLibrary\TSPLibrary\bin\Debug\netcoreapp3.1\System.Diagnostics.PerformanceCounter.dll
+D:\University\Kurs 3\TSP\Library\TSPLibrary\TSPLibrary\bin\Debug\netcoreapp3.1\System.Drawing.Common.dll
+D:\University\Kurs 3\TSP\Library\TSPLibrary\TSPLibrary\bin\Debug\netcoreapp3.1\System.Security.AccessControl.dll
+D:\University\Kurs 3\TSP\Library\TSPLibrary\TSPLibrary\bin\Debug\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
+D:\University\Kurs 3\TSP\Library\TSPLibrary\TSPLibrary\bin\Debug\netcoreapp3.1\System.Security.Permissions.dll
+D:\University\Kurs 3\TSP\Library\TSPLibrary\TSPLibrary\bin\Debug\netcoreapp3.1\System.Security.Principal.Windows.dll
+D:\University\Kurs 3\TSP\Library\TSPLibrary\TSPLibrary\bin\Debug\netcoreapp3.1\System.Windows.Extensions.dll
+D:\University\Kurs 3\TSP\Library\TSPLibrary\TSPLibrary\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\Microsoft.Win32.Registry.dll
+D:\University\Kurs 3\TSP\Library\TSPLibrary\TSPLibrary\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.1\Microsoft.Win32.SystemEvents.dll
+D:\University\Kurs 3\TSP\Library\TSPLibrary\TSPLibrary\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Data.OleDb.dll
+D:\University\Kurs 3\TSP\Library\TSPLibrary\TSPLibrary\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.1\System.Diagnostics.PerformanceCounter.dll
+D:\University\Kurs 3\TSP\Library\TSPLibrary\TSPLibrary\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp3.1\System.Drawing.Common.dll
+D:\University\Kurs 3\TSP\Library\TSPLibrary\TSPLibrary\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.1\System.Drawing.Common.dll
+D:\University\Kurs 3\TSP\Library\TSPLibrary\TSPLibrary\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.AccessControl.dll
+D:\University\Kurs 3\TSP\Library\TSPLibrary\TSPLibrary\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+D:\University\Kurs 3\TSP\Library\TSPLibrary\TSPLibrary\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Security.Principal.Windows.dll
+D:\University\Kurs 3\TSP\Library\TSPLibrary\TSPLibrary\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Security.Principal.Windows.dll
+D:\University\Kurs 3\TSP\Library\TSPLibrary\TSPLibrary\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.1\System.Windows.Extensions.dll
+D:\University\Kurs 3\TSP\Library\TSPLibrary\TSPLibrary\obj\Debug\netcoreapp3.1\TSPLibrary.csproj.AssemblyReference.cache
+D:\University\Kurs 3\TSP\Library\TSPLibrary\TSPLibrary\obj\Debug\netcoreapp3.1\TSPLibrary.Form1.resources
+D:\University\Kurs 3\TSP\Library\TSPLibrary\TSPLibrary\obj\Debug\netcoreapp3.1\TSPLibrary.csproj.GenerateResource.cache
+D:\University\Kurs 3\TSP\Library\TSPLibrary\TSPLibrary\obj\Debug\netcoreapp3.1\TSPLibrary.GeneratedMSBuildEditorConfig.editorconfig
+D:\University\Kurs 3\TSP\Library\TSPLibrary\TSPLibrary\obj\Debug\netcoreapp3.1\TSPLibrary.AssemblyInfoInputs.cache
+D:\University\Kurs 3\TSP\Library\TSPLibrary\TSPLibrary\obj\Debug\netcoreapp3.1\TSPLibrary.AssemblyInfo.cs
+D:\University\Kurs 3\TSP\Library\TSPLibrary\TSPLibrary\obj\Debug\netcoreapp3.1\TSPLibrary.csproj.CoreCompileInputs.cache
+D:\University\Kurs 3\TSP\Library\TSPLibrary\TSPLibrary\obj\Debug\netcoreapp3.1\TSPLibrary.csproj.CopyComplete
+D:\University\Kurs 3\TSP\Library\TSPLibrary\TSPLibrary\obj\Debug\netcoreapp3.1\TSPLibrary.dll
+D:\University\Kurs 3\TSP\Library\TSPLibrary\TSPLibrary\obj\Debug\netcoreapp3.1\TSPLibrary.pdb
+D:\University\Kurs 3\TSP\Library\TSPLibrary\TSPLibrary\obj\Debug\netcoreapp3.1\TSPLibrary.genruntimeconfig.cache
+D:\TSPLibrary\TSPLibrary\TSPLibrary\bin\Debug\netcoreapp3.1\TSPLibrary.exe
+D:\TSPLibrary\TSPLibrary\TSPLibrary\bin\Debug\netcoreapp3.1\TSPLibrary.deps.json
+D:\TSPLibrary\TSPLibrary\TSPLibrary\bin\Debug\netcoreapp3.1\TSPLibrary.runtimeconfig.json
+D:\TSPLibrary\TSPLibrary\TSPLibrary\bin\Debug\netcoreapp3.1\TSPLibrary.runtimeconfig.dev.json
+D:\TSPLibrary\TSPLibrary\TSPLibrary\bin\Debug\netcoreapp3.1\TSPLibrary.dll
+D:\TSPLibrary\TSPLibrary\TSPLibrary\bin\Debug\netcoreapp3.1\TSPLibrary.pdb
+D:\TSPLibrary\TSPLibrary\TSPLibrary\bin\Debug\netcoreapp3.1\Microsoft.Win32.Registry.dll
+D:\TSPLibrary\TSPLibrary\TSPLibrary\bin\Debug\netcoreapp3.1\Microsoft.Win32.SystemEvents.dll
+D:\TSPLibrary\TSPLibrary\TSPLibrary\bin\Debug\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
+D:\TSPLibrary\TSPLibrary\TSPLibrary\bin\Debug\netcoreapp3.1\System.Data.OleDb.dll
+D:\TSPLibrary\TSPLibrary\TSPLibrary\bin\Debug\netcoreapp3.1\System.Diagnostics.PerformanceCounter.dll
+D:\TSPLibrary\TSPLibrary\TSPLibrary\bin\Debug\netcoreapp3.1\System.Drawing.Common.dll
+D:\TSPLibrary\TSPLibrary\TSPLibrary\bin\Debug\netcoreapp3.1\System.Security.AccessControl.dll
+D:\TSPLibrary\TSPLibrary\TSPLibrary\bin\Debug\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
+D:\TSPLibrary\TSPLibrary\TSPLibrary\bin\Debug\netcoreapp3.1\System.Security.Permissions.dll
+D:\TSPLibrary\TSPLibrary\TSPLibrary\bin\Debug\netcoreapp3.1\System.Security.Principal.Windows.dll
+D:\TSPLibrary\TSPLibrary\TSPLibrary\bin\Debug\netcoreapp3.1\System.Windows.Extensions.dll
+D:\TSPLibrary\TSPLibrary\TSPLibrary\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\Microsoft.Win32.Registry.dll
+D:\TSPLibrary\TSPLibrary\TSPLibrary\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.1\Microsoft.Win32.SystemEvents.dll
+D:\TSPLibrary\TSPLibrary\TSPLibrary\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Data.OleDb.dll
+D:\TSPLibrary\TSPLibrary\TSPLibrary\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.1\System.Diagnostics.PerformanceCounter.dll
+D:\TSPLibrary\TSPLibrary\TSPLibrary\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp3.1\System.Drawing.Common.dll
+D:\TSPLibrary\TSPLibrary\TSPLibrary\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.1\System.Drawing.Common.dll
+D:\TSPLibrary\TSPLibrary\TSPLibrary\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.AccessControl.dll
+D:\TSPLibrary\TSPLibrary\TSPLibrary\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+D:\TSPLibrary\TSPLibrary\TSPLibrary\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Security.Principal.Windows.dll
+D:\TSPLibrary\TSPLibrary\TSPLibrary\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Security.Principal.Windows.dll
+D:\TSPLibrary\TSPLibrary\TSPLibrary\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.1\System.Windows.Extensions.dll
+D:\TSPLibrary\TSPLibrary\TSPLibrary\obj\Debug\netcoreapp3.1\TSPLibrary.Form1.resources
+D:\TSPLibrary\TSPLibrary\TSPLibrary\obj\Debug\netcoreapp3.1\TSPLibrary.csproj.GenerateResource.cache
+D:\TSPLibrary\TSPLibrary\TSPLibrary\obj\Debug\netcoreapp3.1\TSPLibrary.GeneratedMSBuildEditorConfig.editorconfig
+D:\TSPLibrary\TSPLibrary\TSPLibrary\obj\Debug\netcoreapp3.1\TSPLibrary.AssemblyInfoInputs.cache
+D:\TSPLibrary\TSPLibrary\TSPLibrary\obj\Debug\netcoreapp3.1\TSPLibrary.AssemblyInfo.cs
+D:\TSPLibrary\TSPLibrary\TSPLibrary\obj\Debug\netcoreapp3.1\TSPLibrary.csproj.CoreCompileInputs.cache
+D:\TSPLibrary\TSPLibrary\TSPLibrary\obj\Debug\netcoreapp3.1\TSPLibrary.csproj.CopyComplete
+D:\TSPLibrary\TSPLibrary\TSPLibrary\obj\Debug\netcoreapp3.1\TSPLibrary.dll
+D:\TSPLibrary\TSPLibrary\TSPLibrary\obj\Debug\netcoreapp3.1\TSPLibrary.pdb
+D:\TSPLibrary\TSPLibrary\TSPLibrary\obj\Debug\netcoreapp3.1\TSPLibrary.genruntimeconfig.cache

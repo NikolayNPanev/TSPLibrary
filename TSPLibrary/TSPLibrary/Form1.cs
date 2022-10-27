@@ -25,8 +25,6 @@ namespace TSPLibrary
 
         private void button1_Click(object sender, EventArgs e)
         {
-
-            OleDbCommand command = new OleDbCommand();
             Connection db = new Connection();
             Author a1 = new Author();
             a1.author = "Kolyo";

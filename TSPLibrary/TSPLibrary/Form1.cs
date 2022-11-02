@@ -16,7 +16,6 @@ namespace TSPLibrary
         public Form1()
         {
             InitializeComponent();
-            
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -26,12 +25,19 @@ namespace TSPLibrary
         private void button1_Click(object sender, EventArgs e)
         {
             Connection db = new Connection();
-            Book book = new Book("1","The shining","2345678","1","1999");
-
-            db.InsertBook(book);
+            Book book = new Book("1","The dark side","010101","1","1975");
+            Genre genre = new Genre("Comedy");
+            Visitor visitor = new Visitor("Nikolay", "Nikolaev", "Panev", "2345678");
+            Rent rental = new Rent(visitor, dateTimePicker1.Value, dateTimePicker2.Value, book);
+            db.RentBook(rental);
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
         {
 
         }

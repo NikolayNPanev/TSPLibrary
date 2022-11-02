@@ -10,21 +10,23 @@ namespace TSPLibrary
         OleDbConnection connect;
         OleDbCommand command;
 
-        private void ConnectionTo() {
+        private void ConnectionTo()
+        {
             connect = new OleDbConnection(@"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=D:\TSPLibrary\TSPLibrary\Database1.mdb");
             command = connect.CreateCommand();
 
         }
 
-        public Connection() {
+        public Connection()
+        {
             ConnectionTo();
         }
 
-        public void Insert(Author author)
+        public void InsertAuthor(Author author)
         {
             try
             {
-                command.CommandText = "INSERT INTO Author(_Author) values ('" + author.author+ "');";
+                command.CommandText = "INSERT INTO Author(_Author) values ('" + author.author + "');";
                 command.CommandType = System.Data.CommandType.Text;
                 connect.Open();
                 command.ExecuteNonQuery();
@@ -34,11 +36,38 @@ namespace TSPLibrary
             {
                 System.Windows.Forms.MessageBox.Show(e.ToString());
             }
-            finally {
-                if (connect != null) {
+            finally
+            {
+                if (connect != null)
+                {
                     connect.Close();
-                }            
+                }
             }
+
+        }
+
+        public void InsertBook(Book book)
+        {
+            try
+            {
+                command.CommandText = "INSERT INTO Books(Author, ISBN, Title, Genre, PubYear) values ('" + book.authorID + "','" + book.ISBN + "','" + book.Title + "'," + book.Genre + "," + book.PubYear + ");";
+                command.CommandType = System.Data.CommandType.Text;
+                connect.Open();
+                command.ExecuteNonQuery();
+
+            }
+            catch (Exception e)
+            {
+                System.Windows.Forms.MessageBox.Show(e.ToString());
+            }
+            finally
+            {
+                if (connect != null)
+                {
+                    connect.Close();
+                }
+            }
+
         }
     }
 }

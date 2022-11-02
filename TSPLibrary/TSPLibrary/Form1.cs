@@ -26,10 +26,9 @@ namespace TSPLibrary
         private void button1_Click(object sender, EventArgs e)
         {
             Connection db = new Connection();
-            Author a1 = new Author();
-            a1.author = "Kolyo";
+            Book book = new Book("1","The shining","2345678","1","1999");
 
-            db.Insert(a1);
+            db.InsertBook(book);
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)

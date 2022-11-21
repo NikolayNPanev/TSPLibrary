@@ -75,3 +75,4 @@ D:\TSPLibrary\TSPLibrary\TSPLibrary\obj\Debug\netcoreapp3.1\TSPLibrary.csproj.Co
 D:\TSPLibrary\TSPLibrary\TSPLibrary\obj\Debug\netcoreapp3.1\TSPLibrary.dll
 D:\TSPLibrary\TSPLibrary\TSPLibrary\obj\Debug\netcoreapp3.1\TSPLibrary.pdb
 D:\TSPLibrary\TSPLibrary\TSPLibrary\obj\Debug\netcoreapp3.1\TSPLibrary.genruntimeconfig.cache
+D:\TSPLibrary\TSPLibrary\TSPLibrary\obj\Debug\netcoreapp3.1\TSPLibrary.csproj.AssemblyReference.cache

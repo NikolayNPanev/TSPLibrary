@@ -15,51 +15,64 @@ namespace TSPLibrary
     public partial class Form1 : System.Windows.Forms.Form
     {
         private DataGridView dataGridView1 = new DataGridView();
-        private BindingSource bindingSource1 = new BindingSource();
 
+        private DataGridView dataGridView2 = new DataGridView();
+
+        
         public Form1()
         {
             InitializeComponent();
+
+            Visitor visitor = new Visitor("Nikolay", "Nikolaev", "Panev", "2345678","22","M");
+
+            Connection db = new Connection();
+
+            var source2 = new BindingSource();
+            Visitor[] visitors = db.Visitors();
+            source2.DataSource = visitors;
+            dataGridView2.DataSource = source2;
+
+
+
         }
 
        
 
         private void Form1_Load(object sender, EventArgs e)
         {
+           
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             Connection db = new Connection();
             Book book = new Book("1","The dark side","010101","1","1975");
-            //Genre genre = new Genre("Comedy");
-            Visitor visitor = new Visitor("Nikolay", "Nikolaev", "Panev", "2345678");
-            Rent rental = new Rent(visitor.barcode, dateTimePicker1.Value, dateTimePicker2.Value, book.ISBN);
-            Rent[] rentals = db.GetVisitorRentals(visitor);
+
+            //. Book[] books = db.Books();
+            
+
+            String barcode = textBox1.Text;
+
+            Rent[] rentals = db.GetVisitorRentals(barcode);
 
             var source = new BindingSource();
+            
             source.DataSource = rentals;
+           
             dataGridView1.DataSource = source;
+           
+
+            //Genre genre = new Genre("Comedy");
+
+            //Rent rental = new Rent(visitor.barcode, dateTimePicker1.Value, dateTimePicker2.Value, book.ISBN);
+
+
+
 
             //db.RentBook(rental);
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void dataGridView1_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
         {
 
         }

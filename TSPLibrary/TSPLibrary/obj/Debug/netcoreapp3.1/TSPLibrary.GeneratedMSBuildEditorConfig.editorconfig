@@ -1,3 +1,9 @@
 is_global = true
+build_property.ApplicationManifest = 
+build_property.StartupObject = 
+build_property.ApplicationDefaultFont = 
+build_property.ApplicationHighDpiMode = 
+build_property.ApplicationUseCompatibleTextRendering = 
+build_property.ApplicationVisualStyles = 
 build_property.RootNamespace = TSPLibrary
-build_property.ProjectDir = D:\TSPLibrary\TSPLibrary\TSPLibrary\
+build_property.ProjectDir = C:\Users\Alexandra\Documents\GitHub\TSPLibrary\TSPLibrary\TSPLibrary\

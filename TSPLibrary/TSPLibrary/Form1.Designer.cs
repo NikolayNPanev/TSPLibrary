@@ -48,9 +48,10 @@ namespace TSPLibrary
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(773, 28);
+            this.button1.Location = new System.Drawing.Point(1436, 60);
+            this.button1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(155, 23);
+            this.button1.Size = new System.Drawing.Size(288, 49);
             this.button1.TabIndex = 0;
             this.button1.Text = "Show Rentals";
             this.button1.UseVisualStyleBackColor = true;
@@ -58,9 +59,10 @@ namespace TSPLibrary
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(645, 29);
+            this.textBox1.Location = new System.Drawing.Point(1198, 62);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 23);
+            this.textBox1.Size = new System.Drawing.Size(182, 39);
             this.textBox1.TabIndex = 1;
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
@@ -68,9 +70,10 @@ namespace TSPLibrary
             // 
             this.dateTimePicker1.CustomFormat = "MM/dd/yyyy";
             this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker1.Location = new System.Drawing.Point(545, 82);
+            this.dateTimePicker1.Location = new System.Drawing.Point(1012, 175);
+            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(200, 23);
+            this.dateTimePicker1.Size = new System.Drawing.Size(368, 39);
             this.dateTimePicker1.TabIndex = 2;
             this.dateTimePicker1.Value = new System.DateTime(2022, 11, 2, 0, 0, 0, 0);
             // 
@@ -78,71 +81,82 @@ namespace TSPLibrary
             // 
             this.dateTimePicker2.CustomFormat = "MM/dd/yyyy";
             this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker2.Location = new System.Drawing.Point(545, 138);
+            this.dateTimePicker2.Location = new System.Drawing.Point(1012, 294);
+            this.dateTimePicker2.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(200, 23);
+            this.dateTimePicker2.Size = new System.Drawing.Size(368, 39);
             this.dateTimePicker2.TabIndex = 3;
             this.dateTimePicker2.Value = new System.DateTime(2022, 11, 2, 0, 0, 0, 0);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(567, 64);
+            this.label1.Location = new System.Drawing.Point(1053, 137);
+            this.label1.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(55, 15);
+            this.label1.Size = new System.Drawing.Size(112, 32);
             this.label1.TabIndex = 4;
             this.label1.Text = "StartDate";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(567, 120);
+            this.label2.Location = new System.Drawing.Point(1053, 256);
+            this.label2.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(51, 15);
+            this.label2.Size = new System.Drawing.Size(104, 32);
             this.label2.TabIndex = 5;
             this.label2.Text = "EndDate";
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AllowUserToAddRows = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(3, 38);
+            this.dataGridView1.Location = new System.Drawing.Point(6, 81);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 82;
             this.dataGridView1.RowTemplate.Height = 25;
-            this.dataGridView1.Size = new System.Drawing.Size(479, 649);
+            this.dataGridView1.Size = new System.Drawing.Size(890, 1385);
             this.dataGridView1.TabIndex = 6;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(163, 20);
+            this.label3.Location = new System.Drawing.Point(303, 43);
+            this.label3.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(102, 15);
+            this.label3.Size = new System.Drawing.Size(205, 32);
             this.label3.TabIndex = 7;
             this.label3.Text = "Book Rent History";
             // 
             // dataGridView2
             // 
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(488, 200);
+            this.dataGridView2.Location = new System.Drawing.Point(906, 427);
+            this.dataGridView2.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.dataGridView2.Name = "dataGridView2";
+            this.dataGridView2.RowHeadersWidth = 82;
             this.dataGridView2.RowTemplate.Height = 25;
-            this.dataGridView2.Size = new System.Drawing.Size(684, 487);
+            this.dataGridView2.Size = new System.Drawing.Size(1270, 1039);
             this.dataGridView2.TabIndex = 8;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(545, 32);
+            this.label4.Location = new System.Drawing.Point(1012, 68);
+            this.label4.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(86, 15);
+            this.label4.Size = new System.Drawing.Size(174, 32);
             this.label4.TabIndex = 9;
             this.label4.Text = "Visitor Barcode";
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(805, 84);
+            this.button2.Location = new System.Drawing.Point(1495, 179);
+            this.button2.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(90, 23);
+            this.button2.Size = new System.Drawing.Size(167, 49);
             this.button2.TabIndex = 10;
             this.button2.Text = "Rent Books";
             this.button2.UseVisualStyleBackColor = true;
@@ -150,9 +164,10 @@ namespace TSPLibrary
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(805, 120);
+            this.button3.Location = new System.Drawing.Point(1495, 256);
+            this.button3.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(90, 23);
+            this.button3.Size = new System.Drawing.Size(167, 49);
             this.button3.TabIndex = 11;
             this.button3.Text = "Visitors";
             this.button3.UseVisualStyleBackColor = true;
@@ -160,9 +175,10 @@ namespace TSPLibrary
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(805, 159);
+            this.button4.Location = new System.Drawing.Point(1495, 339);
+            this.button4.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(90, 23);
+            this.button4.Size = new System.Drawing.Size(167, 49);
             this.button4.TabIndex = 12;
             this.button4.Text = "Books";
             this.button4.UseVisualStyleBackColor = true;
@@ -170,9 +186,9 @@ namespace TSPLibrary
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1184, 699);
+            this.ClientSize = new System.Drawing.Size(2199, 1491);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
@@ -186,6 +202,7 @@ namespace TSPLibrary
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.button1);
+            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);

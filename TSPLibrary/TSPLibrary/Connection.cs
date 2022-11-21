@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Text;
 using System.Data.OleDb;
 using System.Data;
+using System.Globalization;
+using System.Diagnostics.CodeAnalysis;
 
 namespace TSPLibrary
 {
@@ -10,6 +12,7 @@ namespace TSPLibrary
     {
         OleDbConnection connect;
         OleDbCommand command;
+        private DateTimeStyles provider = new DateTimeStyles();
 
         private void ConnectionTo()
         {
@@ -301,7 +304,7 @@ namespace TSPLibrary
                 for (int i = 0; i < result.Count; i++)
                 {
                     String date = StartDates[i];
-                    returnRent[i] = new Rent(Barcodes[i], DateTime.Parse(StartDates[i]), DateTime.Parse(EndDates[i]), BookIDs[i]);
+                    returnRent[i] = new Rent(Barcodes[i], DateTime.ParseExact(StartDates[i],"MM/dd/yyyy",null), DateTime.ParseExact(EndDates[i], "MM/dd/yyyy", null), BookIDs[i]);
 
                 }
 

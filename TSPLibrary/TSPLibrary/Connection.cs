@@ -13,7 +13,7 @@ namespace TSPLibrary
 
         private void ConnectionTo()
         {
-            connect = new OleDbConnection(@"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=D:\TSPLibrary\TSPLibrary\Database1.mdb");
+            connect = new OleDbConnection(@"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\Alexandra\Documents\GitHub\TSPLibrary\TSPLibrary\Database1.mdb");
             command = connect.CreateCommand();
 
         }

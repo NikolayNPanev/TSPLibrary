@@ -76,3 +76,6 @@ D:\TSPLibrary\TSPLibrary\TSPLibrary\obj\Debug\netcoreapp3.1\TSPLibrary.dll
 D:\TSPLibrary\TSPLibrary\TSPLibrary\obj\Debug\netcoreapp3.1\TSPLibrary.pdb
 D:\TSPLibrary\TSPLibrary\TSPLibrary\obj\Debug\netcoreapp3.1\TSPLibrary.genruntimeconfig.cache
 D:\TSPLibrary\TSPLibrary\TSPLibrary\obj\Debug\netcoreapp3.1\TSPLibrary.csproj.AssemblyReference.cache
+D:\TSPLibrary\TSPLibrary\TSPLibrary\obj\Debug\netcoreapp3.1\TSPLibrary.Form2.resources
+D:\TSPLibrary\TSPLibrary\TSPLibrary\obj\Debug\netcoreapp3.1\TSPLibrary.Form3.resources
+D:\TSPLibrary\TSPLibrary\TSPLibrary\obj\Debug\netcoreapp3.1\TSPLibrary.Form4.resources

@@ -71,6 +71,79 @@ namespace TSPLibrary
 
         }
 
+        public void DeleteBook(String ISBN)
+        {
+            try
+            {
+                command.CommandText = "DELETE FROM Books WHERE ISBN='" + ISBN + "';";
+                command.CommandType = System.Data.CommandType.Text;
+                connect.Open();
+                command.ExecuteNonQuery();
+
+            }
+            catch (Exception e)
+            {
+                System.Windows.Forms.MessageBox.Show(e.ToString());
+            }
+            finally
+            {
+                if (connect != null)
+                {
+                    connect.Close();
+                }
+            }
+
+        }
+
+        public void UpdateBook(String ISBN,String Title,String AuthorID, String PubYear, String Genre)
+        {
+            try
+            {
+                if (!Title.Equals(""))
+                {
+                    command.CommandText = "UPDATE Books SET Title = '" + Title + "' WHERE ISBN='" + ISBN + "';";
+                    command.CommandType = System.Data.CommandType.Text;
+                    connect.Open();
+                    command.ExecuteNonQuery();
+                }
+                if (!AuthorID.Equals(""))
+                {
+                    command.CommandText = "UPDATE Books SET Author = '" + AuthorID + "' WHERE ISBN='" + ISBN + "';";
+                    command.CommandType = System.Data.CommandType.Text;
+                    connect.Open();
+                    command.ExecuteNonQuery();
+                }
+                if (!PubYear.Equals(""))
+                {
+                    command.CommandText = "UPDATE Books SET PubYear = '" + PubYear + "' WHERE ISBN='" + ISBN + "';";
+                    command.CommandType = System.Data.CommandType.Text;
+                    connect.Open();
+                    command.ExecuteNonQuery();
+                }
+                if (!Genre.Equals(""))
+                {
+                    command.CommandText = "UPDATE Books SET Genre = '" + Genre + "' WHERE ISBN='" + ISBN + "';";
+                    command.CommandType = System.Data.CommandType.Text;
+                    connect.Open();
+                    command.ExecuteNonQuery();
+                }
+               
+
+            }
+            catch (Exception e)
+            {
+                System.Windows.Forms.MessageBox.Show(e.ToString());
+            }
+            finally
+            {
+                if (connect != null)
+                {
+                    connect.Close();
+                }
+            }
+
+        }
+
         public void InsertGenre(Genre genre)
         {
             try

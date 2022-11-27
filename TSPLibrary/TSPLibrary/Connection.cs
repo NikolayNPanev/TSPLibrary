@@ -616,7 +616,7 @@ namespace TSPLibrary
 
         public Visitor[] Visitors()
         {
-            Visitor[] returnVisitors = new Visitor[1000];
+            Visitor[] returnVisitors;
             try
             {
 
@@ -762,11 +762,12 @@ namespace TSPLibrary
                         }
                     connect.Close();
                 }
-
+                returnVisitors = new Visitor[Barcodes.Count];
                 for (int i = 0; i < result.Count; i++)
                 {
                     returnVisitors[i] = new Visitor(FNames[i],MNames[i], LNames[i], Barcodes[i], Ages[i], Genders[i],EGNs[i]);
                 }
+
             }
             catch (Exception e)
             {

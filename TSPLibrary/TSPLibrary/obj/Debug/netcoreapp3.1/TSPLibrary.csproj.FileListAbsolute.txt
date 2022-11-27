@@ -79,3 +79,7 @@ D:\TSPLibrary\TSPLibrary\TSPLibrary\obj\Debug\netcoreapp3.1\TSPLibrary.csproj.As
 D:\TSPLibrary\TSPLibrary\TSPLibrary\obj\Debug\netcoreapp3.1\TSPLibrary.Form2.resources
 D:\TSPLibrary\TSPLibrary\TSPLibrary\obj\Debug\netcoreapp3.1\TSPLibrary.Form3.resources
 D:\TSPLibrary\TSPLibrary\TSPLibrary\obj\Debug\netcoreapp3.1\TSPLibrary.Form4.resources
+D:\TSPLibrary\TSPLibrary\TSPLibrary\bin\Debug\netcoreapp3.1\BarcodeStandard.dll
+D:\TSPLibrary\TSPLibrary\TSPLibrary\bin\Debug\netcoreapp3.1\System.Runtime.CompilerServices.Unsafe.dll
+D:\TSPLibrary\TSPLibrary\TSPLibrary\bin\Debug\netcoreapp3.1\System.Text.Encodings.Web.dll
+D:\TSPLibrary\TSPLibrary\TSPLibrary\bin\Debug\netcoreapp3.1\System.Text.Json.dll

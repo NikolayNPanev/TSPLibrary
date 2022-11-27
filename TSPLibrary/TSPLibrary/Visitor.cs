@@ -26,5 +26,9 @@ namespace TSPLibrary
             this.EGN = EGN;
 
         }
+        public Visitor()
+        {
+        }
+
     }
 }

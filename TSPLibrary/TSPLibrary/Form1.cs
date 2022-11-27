@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.OleDb;
 using System.Data.SqlClient;
+using BarcodeLib;
 
 namespace TSPLibrary
 {
@@ -21,7 +22,6 @@ namespace TSPLibrary
         ///                         ///
         ///////////////////////////////
         private DataGridView dataGridView1 = new DataGridView();
-        private DataGridView dataGridView2 = new DataGridView();
 
         //////////////////////////
         ///                    ///
@@ -32,13 +32,6 @@ namespace TSPLibrary
         {
             InitializeComponent();
 
-            Connection db = new Connection();
-
-            var source2 = new BindingSource();
-            Visitor[] visitors = db.Visitors();
-            source2.DataSource = visitors;
-
-            dataGridView2.DataSource = source2;
         }
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -112,6 +105,47 @@ namespace TSPLibrary
         private void label1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+
+            Connection db = new Connection();
+
+            Visitor visitor = new Visitor();
+            Visitor[] visitors = db.Visitors();
+            try
+            {
+                foreach (Visitor v in visitors)
+                {
+                    if (v!=null) {
+                        if (v.EGN.Equals(textBox2.Text))
+                        {
+                            String visitorBarcode = textBox2.Text;
+                            Barcode barcode = new Barcode();
+                            Color foreColor = Color.Black;
+                            Color backColor = Color.Transparent;
+                            Image img = barcode.Encode(TYPE.CODE128, v.barcode, foreColor, backColor, (int)(pictureBox1.Width * 0.8), (int)(pictureBox1.Height * 0.8));
+                            pictureBox1.Image = img;
+                            label2.Text = v.barcode;
+                            break;
+                        }
+                    }
+                }
+            }
+            catch (Exception ex) {
+                System.Windows.Forms.MessageBox.Show(ex.ToString());
+            }
+            /*try
+            {
+                Barcode barcode = new Barcode();
+                Color foreColor = Color.Black;
+                Color backColor = Color.White;
+                pictureBox1.Image = barcode.Encode(TYPE.CODE11, (string)visitor.barcode, foreColor, backColor, (int)(pictureBox1.Width * 0.8), (int)(pictureBox1.Height * 0.8));
+            }
+            catch (Exception) { 
+            
+            }*/
         }
     }
 }

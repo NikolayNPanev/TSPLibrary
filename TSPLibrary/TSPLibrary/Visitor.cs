@@ -13,8 +13,9 @@ namespace TSPLibrary
         public String barcode { get; set; }
         public String age { get; set; }
         public String gender { get; set; }
+        public String EGN { get; set; }
 
-        public Visitor( String fname, String mname, String lname, String barcode,String age, string gender)
+        public Visitor( String fname, String mname, String lname, String barcode,String age, String gender, String EGN)
         {
             this.barcode = barcode;
             this.fname = fname;
@@ -22,6 +23,7 @@ namespace TSPLibrary
             this.lname = lname;
             this.age = age;
             this.gender = gender;
+            this.EGN = EGN;
 
         }
     }

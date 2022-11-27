@@ -103,5 +103,15 @@ namespace TSPLibrary
             Form4 f4= new Form4();
             f4.Show();
         }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

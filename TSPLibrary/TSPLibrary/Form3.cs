@@ -41,7 +41,7 @@ namespace TSPLibrary
         private void button1_Click(object sender, EventArgs e)
         {
             Connection db = new Connection();
-            Visitor v = new Visitor(textBox1.Text, textBox2.Text, textBox3.Text, textBox6.Text,textBox4.Text,textBox5.Text);
+            Visitor v = new Visitor(textBox1.Text, textBox2.Text, textBox3.Text, textBox6.Text,textBox4.Text,textBox5.Text,textBox7.Text);
 
             db.InsertVisitor(v);
 
@@ -67,7 +67,7 @@ namespace TSPLibrary
         {
             Connection db = new Connection();
 
-            db.UpdateVisitor(textBox1.Text, textBox2.Text, textBox3.Text, textBox4.Text, textBox5.Text, textBox6.Text);
+            db.UpdateVisitor(textBox1.Text, textBox2.Text, textBox3.Text, textBox4.Text, textBox5.Text, textBox6.Text,textBox7.Text);
 
         }
 

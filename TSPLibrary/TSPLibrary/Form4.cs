@@ -13,6 +13,15 @@ namespace TSPLibrary
         public Form4()
         {
             InitializeComponent();
+            Connection db = new Connection();
+
+            Book[] books = db.Books();
+
+            var source = new BindingSource();
+
+            source.DataSource = books;
+
+            dataGridView1.DataSource = source;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -43,6 +52,11 @@ namespace TSPLibrary
             Book addBook = new Book(textBox3.Text,textBox2.Text,textBox1.Text,textBox5.Text,textBox4.Text);
 
             db.InsertBook(addBook);
+        }
+
+        private void Form4_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

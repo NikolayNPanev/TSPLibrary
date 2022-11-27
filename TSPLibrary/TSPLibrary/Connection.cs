@@ -206,14 +206,15 @@ namespace TSPLibrary
         {
             try
             {
-                if (!visitor.barcode.Equals("") && !visitor.fname.Equals("") && !visitor.mname.Equals("") && !visitor.lname.Equals("") && !visitor.age.Equals("") && !visitor.gender.Equals(""))
+                if (!visitor.barcode.Equals("") && !visitor.fname.Equals("") && !visitor.mname.Equals("") && !visitor.lname.Equals("") && !visitor.age.Equals("") && !visitor.gender.Equals("")&&!visitor.EGN.Equals(""))
                 {
-                    command.CommandText = "INSERT INTO Visitors(FirstName,MiddleName,LastName,Barcode,Age,Gender) values ('" + visitor.fname + "','"
+                    command.CommandText = "INSERT INTO Visitors(FirstName,MiddleName,LastName,Barcode,Age,Gender,EGN) values ('" + visitor.fname + "','"
                         + visitor.mname + "','"
                         + visitor.lname + "','"
                         + visitor.barcode + "',"
                         + visitor.age + ",'"
-                        + visitor.gender + "');";
+                        + visitor.gender + "','"
+                        + visitor.EGN+"');";
                     command.CommandType = System.Data.CommandType.Text;
                     connect.Open();
                     command.ExecuteNonQuery();
@@ -237,7 +238,7 @@ namespace TSPLibrary
 
         }
 
-        public void UpdateVisitor(String fname, String mname, String lname, String age, String gender, String barcode) {
+        public void UpdateVisitor(String fname, String mname, String lname, String age, String gender, String barcode, String EGN) {
             try
             {
                 if (!barcode.Equals(""))
@@ -248,6 +249,7 @@ namespace TSPLibrary
                         command.CommandType = System.Data.CommandType.Text;
                         connect.Open();
                         command.ExecuteNonQuery();
+                        connect.Close();
                     }
                     if (!mname.Equals(""))
                     {
@@ -255,6 +257,7 @@ namespace TSPLibrary
                         command.CommandType = System.Data.CommandType.Text;
                         connect.Open();
                         command.ExecuteNonQuery();
+                        connect.Close();
                     }
                     if (!lname.Equals(""))
                     {
@@ -262,6 +265,7 @@ namespace TSPLibrary
                         command.CommandType = System.Data.CommandType.Text;
                         connect.Open();
                         command.ExecuteNonQuery();
+                        connect.Close();
                     }
                     if (!age.Equals(""))
                     {
@@ -269,6 +273,15 @@ namespace TSPLibrary
                         command.CommandType = System.Data.CommandType.Text;
                         connect.Open();
                         command.ExecuteNonQuery();
+                        connect.Close();
+                    }
+                    if (!EGN.Equals(""))
+                    {
+                        command.CommandText = "UPDATE Visitors SET EGN = '" + EGN + "' WHERE Barcode='" + barcode + "';";
+                        command.CommandType = System.Data.CommandType.Text;
+                        connect.Open();
+                        command.ExecuteNonQuery();
+                        connect.Close();
                     }
                     if (!gender.Equals(""))
                     {
@@ -611,25 +624,25 @@ namespace TSPLibrary
                 command.CommandType = System.Data.CommandType.Text;
                 connect.Open();
                 List<String> result = new List<String>();
-                List<int> EGNs = new List<int>();
+                List<String> EGNs = new List<String>();
 
                 using (var reader = command.ExecuteReader())
                 {
                     while (reader.Read())
                     {
-                        result.Add(reader.GetInt32(0).ToString());
+                        result.Add(reader.GetString(0));
 
                     }
                     foreach (String res in result)
                     {
-                        EGNs.Add(int.Parse(res));
+                        EGNs.Add(res);
                     }
                     connect.Close();
                 }
 
                 result.Clear();
 
-                command.CommandText = "SELECT DISTINCT Visitors.FirstName FROM Visitors;";
+                command.CommandText = "SELECT Visitors.FirstName FROM Visitors;";
                 command.CommandType = System.Data.CommandType.Text;
                 connect.Open();
                 List<String> FNames = new List<String>();
@@ -649,7 +662,7 @@ namespace TSPLibrary
 
                 result.Clear();
 
-                command.CommandText = "SELECT DISTINCT Visitors.LastName FROM Visitors;";
+                command.CommandText = "SELECT Visitors.LastName FROM Visitors;";
                 command.CommandType = System.Data.CommandType.Text;
                 connect.Open();
                 List<String> LNames = new List<String>();
@@ -668,7 +681,7 @@ namespace TSPLibrary
                 }
                 result.Clear();
 
-                command.CommandText = "SELECT DISTINCT Visitors.MiddleName FROM Visitors;";
+                command.CommandText = "SELECT Visitors.MiddleName FROM Visitors;";
                 command.CommandType = System.Data.CommandType.Text;
                 connect.Open();
                 List<String> MNames = new List<String>();
@@ -719,18 +732,18 @@ namespace TSPLibrary
                     {
                         result.Add(reader.GetInt32(0).ToString());
 
+                    }
                         foreach (String res in result)
                         {
                             Ages.Add(res);
 
                         }
-                    }
                     connect.Close();
                 }
 
                 result.Clear();
 
-                command.CommandText = "SELECT DISTINCT Visitors.Barcode FROM Visitors;";
+                command.CommandText = "SELECT Barcode FROM Visitors;";
                 command.CommandType = System.Data.CommandType.Text;
                 connect.Open();
                 List<String> Barcodes = new List<String>();
@@ -741,18 +754,18 @@ namespace TSPLibrary
                     {
                         result.Add(reader.GetString(0));
 
+                    }
                         foreach (String res in result)
                         {
                             Barcodes.Add(res);
 
                         }
-                    }
                     connect.Close();
                 }
 
                 for (int i = 0; i < result.Count; i++)
                 {
-                    returnVisitors[i] = new Visitor(FNames[i],MNames[i], LNames[i], Barcodes[i+1], Ages[i+1], Genders[i]);
+                    returnVisitors[i] = new Visitor(FNames[i],MNames[i], LNames[i], Barcodes[i], Ages[i], Genders[i],EGNs[i]);
                 }
             }
             catch (Exception e)

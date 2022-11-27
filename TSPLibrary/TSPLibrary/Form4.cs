@@ -24,6 +24,11 @@ namespace TSPLibrary
             dataGridView1.DataSource = source;
         }
 
+        ///////////////////
+        ///             ///
+        /// DELETE BOOK ///
+        ///             ///
+        ///////////////////
         private void button1_Click(object sender, EventArgs e)
         {
             Connection db = new Connection();
@@ -32,11 +37,11 @@ namespace TSPLibrary
             db.DeleteBook(ISBN);
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
+        ///////////////////
+        ///             ///
+        /// UPDATE BOOK ///
+        ///             ///
+        ///////////////////
         private void button2_Click(object sender, EventArgs e)
         {
             Connection db = new Connection();
@@ -45,6 +50,11 @@ namespace TSPLibrary
 
         }
 
+        ////////////////
+        ///          ///
+        /// ADD BOOK ///
+        ///          ///
+        ////////////////
         private void button3_Click(object sender, EventArgs e)
         {
             Connection db = new Connection();
@@ -52,6 +62,10 @@ namespace TSPLibrary
             Book addBook = new Book(textBox3.Text,textBox2.Text,textBox1.Text,textBox5.Text,textBox4.Text);
 
             db.InsertBook(addBook);
+        }
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
 
         private void Form4_Load(object sender, EventArgs e)

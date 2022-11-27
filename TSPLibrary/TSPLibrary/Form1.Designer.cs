@@ -93,7 +93,7 @@ namespace TSPLibrary
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(586, 290);
+            this.button2.Location = new System.Drawing.Point(514, 289);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(90, 23);
             this.button2.TabIndex = 10;
@@ -103,7 +103,7 @@ namespace TSPLibrary
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(780, 328);
+            this.button3.Location = new System.Drawing.Point(708, 327);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(90, 23);
             this.button3.TabIndex = 11;
@@ -113,7 +113,7 @@ namespace TSPLibrary
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(780, 290);
+            this.button4.Location = new System.Drawing.Point(708, 289);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(90, 23);
             this.button4.TabIndex = 12;
@@ -124,7 +124,7 @@ namespace TSPLibrary
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(623, 33);
+            this.label1.Location = new System.Drawing.Point(551, 32);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(66, 15);
             this.label1.TabIndex = 14;
@@ -133,7 +133,7 @@ namespace TSPLibrary
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(695, 30);
+            this.textBox2.Location = new System.Drawing.Point(623, 29);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(100, 23);
             this.textBox2.TabIndex = 13;
@@ -141,7 +141,7 @@ namespace TSPLibrary
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(801, 29);
+            this.button5.Location = new System.Drawing.Point(729, 28);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(155, 23);
             this.button5.TabIndex = 15;
@@ -151,16 +151,16 @@ namespace TSPLibrary
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(560, 59);
+            this.pictureBox1.Location = new System.Drawing.Point(488, 58);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(447, 138);
+            this.pictureBox1.Size = new System.Drawing.Size(396, 138);
             this.pictureBox1.TabIndex = 16;
             this.pictureBox1.TabStop = false;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(717, 213);
+            this.label2.Location = new System.Drawing.Point(645, 212);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(0, 15);
             this.label2.TabIndex = 17;
@@ -169,7 +169,7 @@ namespace TSPLibrary
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1017, 434);
+            this.ClientSize = new System.Drawing.Size(888, 434);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.button5);

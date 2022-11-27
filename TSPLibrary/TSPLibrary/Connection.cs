@@ -484,7 +484,7 @@ namespace TSPLibrary
         ////////////////////////////
         public Book[] Books()
         {
-            Book[] returnBooks = new Book[1000];
+            Book[] returnBooks;
             try
             {
 
@@ -589,7 +589,7 @@ namespace TSPLibrary
                     }
                     connect.Close();
                 }
-
+                returnBooks = new Book[ISBNs.Count];
                 for (int i = 0; i < result.Count; i++)
                 {
                     returnBooks[i] = new Book(AuthorIDs[i], Titles[i], ISBNs[i], Genres[i], PubYears[i]);

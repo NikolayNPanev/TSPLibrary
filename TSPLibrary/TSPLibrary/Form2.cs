@@ -34,7 +34,11 @@ namespace TSPLibrary
         {
 
         }
-
+        /////////////////
+        ///           ///
+        /// RENT BOOK ///
+        ///           ///
+        /////////////////
         private void button1_Click(object sender, EventArgs e)
         {
             String barcode = textBox1.Text;

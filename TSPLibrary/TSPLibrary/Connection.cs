@@ -8,8 +8,6 @@ namespace TSPLibrary
 {
     class Connection
     {
-
-
         ////////////////////
         ///              ///
         ///  CONNECTION  ///
@@ -22,7 +20,6 @@ namespace TSPLibrary
         {
             connect = new OleDbConnection(@"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=D:\TSPLibrary\TSPLibrary\Database1.mdb");
             command = connect.CreateCommand();
-
         }
 
         public Connection()
@@ -89,10 +86,16 @@ namespace TSPLibrary
         {
             try
             {
-                command.CommandText = "DELETE FROM Books WHERE ISBN='" + ISBN + "';";
-                command.CommandType = System.Data.CommandType.Text;
-                connect.Open();
-                command.ExecuteNonQuery();
+                if (!ISBN.Equals(""))
+                {
+                    command.CommandText = "DELETE FROM Books WHERE ISBN='" + ISBN + "';";
+                    command.CommandType = System.Data.CommandType.Text;
+                    connect.Open();
+                    command.ExecuteNonQuery();
+                }
+                else {
+                    throw new Exception("No ISBN entered!");
+                }
 
             }
             catch (Exception e)
@@ -114,36 +117,40 @@ namespace TSPLibrary
         {
             try
             {
-                if (!Title.Equals(""))
+                if (!ISBN.Equals(""))
                 {
-                    command.CommandText = "UPDATE Books SET Title = '" + Title + "' WHERE ISBN='" + ISBN + "';";
-                    command.CommandType = System.Data.CommandType.Text;
-                    connect.Open();
-                    command.ExecuteNonQuery();
+                    if (!Title.Equals(""))
+                    {
+                        command.CommandText = "UPDATE Books SET Title = '" + Title + "' WHERE ISBN='" + ISBN + "';";
+                        command.CommandType = System.Data.CommandType.Text;
+                        connect.Open();
+                        command.ExecuteNonQuery();
+                    }
+                    if (!AuthorID.Equals(""))
+                    {
+                        command.CommandText = "UPDATE Books SET Author = '" + AuthorID + "' WHERE ISBN='" + ISBN + "';";
+                        command.CommandType = System.Data.CommandType.Text;
+                        connect.Open();
+                        command.ExecuteNonQuery();
+                    }
+                    if (!PubYear.Equals(""))
+                    {
+                        command.CommandText = "UPDATE Books SET PubYear = '" + PubYear + "' WHERE ISBN='" + ISBN + "';";
+                        command.CommandType = System.Data.CommandType.Text;
+                        connect.Open();
+                        command.ExecuteNonQuery();
+                    }
+                    if (!Genre.Equals(""))
+                    {
+                        command.CommandText = "UPDATE Books SET Genre = '" + Genre + "' WHERE ISBN='" + ISBN + "';";
+                        command.CommandType = System.Data.CommandType.Text;
+                        connect.Open();
+                        command.ExecuteNonQuery();
+                    }
                 }
-                if (!AuthorID.Equals(""))
-                {
-                    command.CommandText = "UPDATE Books SET Author = '" + AuthorID + "' WHERE ISBN='" + ISBN + "';";
-                    command.CommandType = System.Data.CommandType.Text;
-                    connect.Open();
-                    command.ExecuteNonQuery();
+                else {
+                    throw new Exception("No ISBN entered!");
                 }
-                if (!PubYear.Equals(""))
-                {
-                    command.CommandText = "UPDATE Books SET PubYear = '" + PubYear + "' WHERE ISBN='" + ISBN + "';";
-                    command.CommandType = System.Data.CommandType.Text;
-                    connect.Open();
-                    command.ExecuteNonQuery();
-                }
-                if (!Genre.Equals(""))
-                {
-                    command.CommandText = "UPDATE Books SET Genre = '" + Genre + "' WHERE ISBN='" + ISBN + "';";
-                    command.CommandType = System.Data.CommandType.Text;
-                    connect.Open();
-                    command.ExecuteNonQuery();
-                }
-               
-
             }
             catch (Exception e)
             {
@@ -199,10 +206,21 @@ namespace TSPLibrary
         {
             try
             {
-                command.CommandText = "INSERT INTO Visitors(FirstName,MiddleName,LastName,Barcode) values ('" + visitor.fname + "','" + visitor.mname + "','" + visitor.lname + "','" + visitor.barcode + "');";
-                command.CommandType = System.Data.CommandType.Text;
-                connect.Open();
-                command.ExecuteNonQuery();
+                if (!visitor.barcode.Equals("") && !visitor.fname.Equals("") && !visitor.mname.Equals("") && !visitor.lname.Equals("") && !visitor.age.Equals("") && !visitor.gender.Equals(""))
+                {
+                    command.CommandText = "INSERT INTO Visitors(FirstName,MiddleName,LastName,Barcode,Age,Gender) values ('" + visitor.fname + "','"
+                        + visitor.mname + "','"
+                        + visitor.lname + "','"
+                        + visitor.barcode + "',"
+                        + visitor.age + ",'"
+                        + visitor.gender + "');";
+                    command.CommandType = System.Data.CommandType.Text;
+                    connect.Open();
+                    command.ExecuteNonQuery();
+                }
+                else {
+                    throw new Exception("All fields must be filled to create a new Visitor!");
+                }
 
             }
             catch (Exception e)
@@ -217,6 +235,95 @@ namespace TSPLibrary
                 }
             }
 
+        }
+
+        public void UpdateVisitor(String fname, String mname, String lname, String age, String gender, String barcode) {
+            try
+            {
+                if (!barcode.Equals(""))
+                {
+                    if (!fname.Equals(""))
+                    {
+                        command.CommandText = "UPDATE Visitors SET FirstName = '" + fname + "' WHERE Barcode='" + barcode + "';";
+                        command.CommandType = System.Data.CommandType.Text;
+                        connect.Open();
+                        command.ExecuteNonQuery();
+                    }
+                    if (!mname.Equals(""))
+                    {
+                        command.CommandText = "UPDATE Visitors SET MiddleName = '" + mname + "' WHERE Barcode='" + barcode + "';";
+                        command.CommandType = System.Data.CommandType.Text;
+                        connect.Open();
+                        command.ExecuteNonQuery();
+                    }
+                    if (!lname.Equals(""))
+                    {
+                        command.CommandText = "UPDATE Visitors SET LastName = '" + lname + "' WHERE Barcode='" + barcode + "';";
+                        command.CommandType = System.Data.CommandType.Text;
+                        connect.Open();
+                        command.ExecuteNonQuery();
+                    }
+                    if (!age.Equals(""))
+                    {
+                        command.CommandText = "UPDATE Visitors SET Age = '" + age + "' WHERE Barcode='" + barcode + "';";
+                        command.CommandType = System.Data.CommandType.Text;
+                        connect.Open();
+                        command.ExecuteNonQuery();
+                    }
+                    if (!gender.Equals(""))
+                    {
+                        command.CommandText = "UPDATE Visitors SET Gender = '" + gender + "' WHERE Barcode='" + barcode + "';";
+                        command.CommandType = System.Data.CommandType.Text;
+                        connect.Open();
+                        command.ExecuteNonQuery();
+                    }
+                }
+                else {
+                    throw new Exception("No barcode entered!");
+                }
+
+
+            }
+            catch (Exception e)
+            {
+                System.Windows.Forms.MessageBox.Show(e.ToString());
+            }
+            finally
+            {
+                if (connect != null)
+                {
+                    connect.Close();
+                }
+            }
+        }
+
+        public void DeleteVisitor(String barcode) {
+            try
+            {
+                if (!barcode.Equals(""))
+                {
+                    command.CommandText = "DELETE FROM Visitors WHERE Barcode='" + barcode + "';";
+                    command.CommandType = System.Data.CommandType.Text;
+                    connect.Open();
+                    command.ExecuteNonQuery();
+                }
+                else
+                {
+                    throw new Exception("No barcode entered!");
+                }
+
+            }
+            catch (Exception e)
+            {
+                System.Windows.Forms.MessageBox.Show(e.ToString());
+            }
+            finally
+            {
+                if (connect != null)
+                {
+                    connect.Close();
+                }
+            }
         }
 
         ///////////////////////////
@@ -492,7 +599,7 @@ namespace TSPLibrary
 
         }
 
-        ///////////////////////////////////////////////////////////////////////////
+        // ///////////////////////////////////////////////////////////////////////
 
         public Visitor[] Visitors()
         {
@@ -668,4 +775,4 @@ namespace TSPLibrary
 
 
     }
-    }
+ }

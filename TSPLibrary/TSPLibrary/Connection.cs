@@ -8,6 +8,13 @@ namespace TSPLibrary
 {
     class Connection
     {
+
+
+        ////////////////////
+        ///              ///
+        ///  CONNECTION  ///
+        ///              ///
+        ////////////////////
         OleDbConnection connect;
         OleDbCommand command;
 
@@ -47,6 +54,12 @@ namespace TSPLibrary
 
         }
 
+        ///////////////////////////
+        ///                     ///
+        ///  BOOK DB FUNCTIONS  ///
+        ///                     ///
+        ///////////////////////////
+
         public void InsertBook(Book book)
         {
             try
@@ -71,6 +84,7 @@ namespace TSPLibrary
 
         }
 
+        // ////////////////////////////////
         public void DeleteBook(String ISBN)
         {
             try
@@ -95,6 +109,7 @@ namespace TSPLibrary
 
         }
 
+        // //////////////////////////////////////
         public void UpdateBook(String ISBN,String Title,String AuthorID, String PubYear, String Genre)
         {
             try
@@ -144,6 +159,13 @@ namespace TSPLibrary
 
         }
 
+
+        ////////////////////////////
+        ///                      ///
+        ///  GENRE DB FUNCTIONS  ///
+        ///                      ///
+        ////////////////////////////
+
         public void InsertGenre(Genre genre)
         {
             try
@@ -166,6 +188,12 @@ namespace TSPLibrary
                 }
             }
         }
+
+        //////////////////////////////
+        ///                        ///
+        ///  VISITOR DB FUNCTIONS  ///
+        ///                        ///
+        //////////////////////////////
 
         public void InsertVisitor(Visitor visitor)
         {
@@ -190,6 +218,12 @@ namespace TSPLibrary
             }
 
         }
+
+        ///////////////////////////
+        ///                     ///
+        ///  RENT DB FUNCTIONS  ///
+        ///                     ///
+        ///////////////////////////
 
         public void RentBook(Rent rental)
         {
@@ -323,7 +357,11 @@ namespace TSPLibrary
 
         }
 
-        //===============================================================================================================================================
+        ////////////////////////////
+        ///                      ///
+        ///  FETCH DB FUNCTIONS  ///
+        ///                      ///
+        ////////////////////////////
         public Book[] Books()
         {
             Book[] returnBooks = new Book[1000];
@@ -453,6 +491,8 @@ namespace TSPLibrary
             return returnBooks;
 
         }
+
+        ///////////////////////////////////////////////////////////////////////////
 
         public Visitor[] Visitors()
         {

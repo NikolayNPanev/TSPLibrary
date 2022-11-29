@@ -52,5 +52,12 @@ namespace TSPLibrary
 
             db.RentBook(r);
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Connection db = new Connection();
+
+            db.ReturnBook(textBox1.Text,textBox2.Text);
+        }
     }
 }

@@ -56,6 +56,17 @@ namespace TSPLibrary
             source.DataSource = rentals;
            
             dataGridView1.DataSource = source;
+  
+            foreach (DataGridViewRow row in dataGridView1.Rows)
+            {
+                DataGridViewCheckBoxCell isReturned = row.Cells[4] as DataGridViewCheckBoxCell;
+                if(isReturned.Value!=null)
+                if ((Boolean)isReturned.Value==false)
+                {
+                    row.DefaultCellStyle.BackColor = Color.Red;
+                }
+
+            }
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -136,16 +147,6 @@ namespace TSPLibrary
             catch (Exception ex) {
                 System.Windows.Forms.MessageBox.Show(ex.ToString());
             }
-            /*try
-            {
-                Barcode barcode = new Barcode();
-                Color foreColor = Color.Black;
-                Color backColor = Color.White;
-                pictureBox1.Image = barcode.Encode(TYPE.CODE11, (string)visitor.barcode, foreColor, backColor, (int)(pictureBox1.Width * 0.8), (int)(pictureBox1.Height * 0.8));
-            }
-            catch (Exception) { 
-            
-            }*/
         }
     }
 }

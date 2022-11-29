@@ -350,7 +350,31 @@ namespace TSPLibrary
 
             try
             {
-                command.CommandText = "INSERT INTO Rent(VisitorBarcode,StartDate,EndDate,BookID) values ('" + rental.visitorBarcode + "','" + rental.startDate.ToString() + "','" + rental.endDate.ToString() + "','" + rental.BookID + "');";
+                command.CommandText = "INSERT INTO Rent(VisitorBarcode,StartDate,EndDate,BookID,isReturned) values ('" + rental.visitorBarcode + "','" + rental.startDate.ToString() + "','" + rental.endDate.ToString() + "','" + rental.BookID + "',FALSE);";
+                command.CommandType = System.Data.CommandType.Text;
+                connect.Open();
+                command.ExecuteNonQuery();
+
+            }
+            catch (Exception e)
+            {
+                System.Windows.Forms.MessageBox.Show(e.ToString());
+            }
+            finally
+            {
+                if (connect != null)
+                {
+                    connect.Close();
+                }
+            }
+        }
+
+        public void ReturnBook(String barcode, String BookID)
+        {
+
+            try
+            {
+                command.CommandText = "UPDATE Rent SET isReturned = TRUE WHERE BookID = '"+BookID+"' AND VisitorBarcode = '"+barcode+"';";
                 command.CommandType = System.Data.CommandType.Text;
                 connect.Open();
                 command.ExecuteNonQuery();
@@ -414,6 +438,25 @@ namespace TSPLibrary
                     connect.Close();
                 }
 
+                command.CommandText = "SELECT isReturned FROM Rent WHERE VisitorBarcode = '" + visitor + "';";
+                command.CommandType = System.Data.CommandType.Text;
+                connect.Open();
+                List<bool> Returned = new List<bool>();
+                result.Clear();
+
+                using (var reader = command.ExecuteReader())
+                {
+                    while (reader.Read())
+                    {
+                        result.Add(reader.GetBoolean(0).ToString());
+                    }
+                    foreach (String res in result)
+                    {
+                        Returned.Add((Boolean.Parse(res)));
+                    }
+                    connect.Close();
+                }
+
                 command.CommandText = "SELECT StartDate FROM Rent WHERE VisitorBarcode = '" + visitor + "';";
                 command.CommandType = System.Data.CommandType.Text;
                 connect.Open();
@@ -455,7 +498,7 @@ namespace TSPLibrary
                 for (int i = 0; i < result.Count; i++)
                 {
                     String date = StartDates[i];
-                    returnRent[i] = new Rent(Barcodes[i], DateTime.Parse(StartDates[i]), DateTime.Parse(EndDates[i]), BookIDs[i]);
+                    returnRent[i] = new Rent(Barcodes[i], DateTime.Parse(StartDates[i]), DateTime.Parse(EndDates[i]), BookIDs[i], Returned[i]);
 
                 }
 

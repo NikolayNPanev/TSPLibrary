@@ -61,7 +61,7 @@ namespace TSPLibrary
             {
                 DataGridViewCheckBoxCell isReturned = row.Cells[4] as DataGridViewCheckBoxCell;
                 if(isReturned.Value!=null)
-                if ((Boolean)isReturned.Value==false)
+                if ((Boolean)isReturned.Value==false&& (DateTime)row.Cells[2].Value <    DateTime.Now)
                 {
                     row.DefaultCellStyle.BackColor = Color.Red;
                 }

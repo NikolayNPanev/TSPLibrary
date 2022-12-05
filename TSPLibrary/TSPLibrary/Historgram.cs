@@ -23,13 +23,13 @@ namespace TSPLibrary
 
         public static Bitmap ToBitmap(this IEnumerable<KeyValuePair<int, int>> histogram, float heightScale = 3.0f, int xLabelOffset = 12, int yLabelOffset = 4)
         {
-            var marginTop = 5;
-            var marginBottom = 50;
-            var marginLeft = 50;
+            var marginTop = 50;
+            var marginBottom = 500;
+            var marginLeft = 10;
 
             var max = histogram.Max(kvp => kvp.Key);
             var min = histogram.Min(kvp => kvp.Key);
-            var width = max - min;
+            var width = 500;
             var maxValue = histogram.Max(kvp => kvp.Value);
             var height = (int)Math.Ceiling(maxValue * heightScale);
             var bitmap = new Bitmap(width + marginLeft, height + marginBottom + marginTop);
@@ -39,6 +39,11 @@ namespace TSPLibrary
             foreach (var kvp in histogram)
             {
                 var x = kvp.Key - min + marginLeft;
+                gfx.DrawLine(blue, new PointF(x, (height - kvp.Value * heightScale) + marginTop), new PointF(x, height + marginTop));
+                gfx.DrawLine(blue, new PointF(x+1, (height - kvp.Value * heightScale) + marginTop), new PointF(x+1, height + marginTop));
+                gfx.DrawLine(blue, new PointF(x+2, (height - kvp.Value * heightScale) + marginTop), new PointF(x+2, height + marginTop));
+                gfx.DrawLine(blue, new PointF(x-1, (height - kvp.Value * heightScale) + marginTop), new PointF(x-1, height + marginTop));
+                gfx.DrawLine(blue, new PointF(x-2, (height - kvp.Value * heightScale) + marginTop), new PointF(x-2, height + marginTop));
                 gfx.DrawLine(blue, new PointF(x, (height - kvp.Value * heightScale) + marginTop), new PointF(x, height + marginTop));
             }
 

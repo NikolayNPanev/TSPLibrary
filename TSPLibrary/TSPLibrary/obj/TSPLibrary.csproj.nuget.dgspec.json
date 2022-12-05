@@ -48,6 +48,10 @@
               "target": "Package",
               "version": "[2.4.0, )"
             },
+            "Microsoft.AspNet.WebPages": {
+              "target": "Package",
+              "version": "[3.2.9, )"
+            },
             "System.Data.OleDb": {
               "target": "Package",
               "version": "[6.0.0, )"

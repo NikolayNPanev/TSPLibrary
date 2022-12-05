@@ -10,12 +10,13 @@ using System.Windows.Forms;
 using System.Data.OleDb;
 using System.Data.SqlClient;
 using BarcodeLib;
+using System.Web.Helpers;
+using System.Drawing;
 
 namespace TSPLibrary
 {
     public partial class Form1 : System.Windows.Forms.Form
     {
-
         ///////////////////////////////
         ///                         ///
         ///  INITIALIZE DATA GRIDS  ///
@@ -31,6 +32,7 @@ namespace TSPLibrary
         public Form1()
         {
             InitializeComponent();
+
 
         }
         private void Form1_Load(object sender, EventArgs e)
@@ -120,17 +122,27 @@ namespace TSPLibrary
 
         private void button5_Click(object sender, EventArgs e)
         {
-
             Connection db = new Connection();
-
             Visitor visitor = new Visitor();
             Visitor[] visitors = db.Visitors();
+
+            List<int> array1 = new List<int> { };
+            foreach (Visitor v in visitors) {
+                if(v!=null)
+                array1.Add(int.Parse(v.age));
+            }
+
+            var sr = Historgram.ToHistogram(array1);
+            Bitmap h1 = Historgram.ToBitmap(sr);
+
+            int[] ages = new int[100];
+            int i = 0;
             try
             {
                 foreach (Visitor v in visitors)
                 {
                     if (v!=null) {
-                        if (v.EGN.Equals(textBox2.Text))
+                        if (v.EGN.Equals(textBox2.Text) && v != null)
                         {
                             String visitorBarcode = textBox2.Text;
                             Barcode barcode = new Barcode();
@@ -139,10 +151,18 @@ namespace TSPLibrary
                             Image img = barcode.Encode(TYPE.CODE128, v.barcode, foreColor, backColor, (int)(pictureBox1.Width * 0.8), (int)(pictureBox1.Height * 0.8));
                             pictureBox1.Image = img;
                             label2.Text = v.barcode;
+                            ages[i] = int.Parse(v.age);
                             break;
                         }
                     }
                 }
+
+                pictureBox1.Image = h1;
+
+
+                /*var c1 = new Chart(100, 300);
+                c1.AddSeries(ages.ToString());
+                c1.ToWebImage("D:/TSPLibrary/TSPLibrary/TSPLibrary/img.jpg");*/
             }
             catch (Exception ex) {
                 System.Windows.Forms.MessageBox.Show(ex.ToString());

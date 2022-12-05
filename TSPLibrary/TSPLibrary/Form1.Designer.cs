@@ -151,9 +151,9 @@ namespace TSPLibrary
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(488, 58);
+            this.pictureBox1.Location = new System.Drawing.Point(488, 76);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(396, 138);
+            this.pictureBox1.Size = new System.Drawing.Size(396, 109);
             this.pictureBox1.TabIndex = 16;
             this.pictureBox1.TabStop = false;
             // 

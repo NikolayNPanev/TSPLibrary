@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "byzAWYmOTHKH8YKde7OtEaO+6piE9LLotXM9flsg8LJcjE/VmnHKkxq+IJgvyO6NNK7bRfsmIFL2V9bf9iMu2w==",
+  "dgSpecHash": "PlpqlugqCdbe+fMi64lSiP0301tR2SY9M+pbTJblz7qnyBAl0duHU2brz2JBuSZVGc0lSQ+m05fCOBDxyboMtA==",
   "success": true,
   "projectFilePath": "D:\\TSPLibrary\\TSPLibrary\\TSPLibrary\\TSPLibrary.csproj",
   "expectedPackageFiles": [
@@ -15,12 +15,10 @@
     "C:\\Users\\lenovo\\.nuget\\packages\\system.diagnostics.performancecounter\\6.0.0\\system.diagnostics.performancecounter.6.0.0.nupkg.sha512",
     "C:\\Users\\lenovo\\.nuget\\packages\\system.drawing.common\\6.0.0\\system.drawing.common.6.0.0.nupkg.sha512",
     "C:\\Users\\lenovo\\.nuget\\packages\\system.memory\\4.5.4\\system.memory.4.5.4.nupkg.sha512",
-    "C:\\Users\\lenovo\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\5.0.0\\system.runtime.compilerservices.unsafe.5.0.0.nupkg.sha512",
     "C:\\Users\\lenovo\\.nuget\\packages\\system.security.accesscontrol\\6.0.0\\system.security.accesscontrol.6.0.0.nupkg.sha512",
     "C:\\Users\\lenovo\\.nuget\\packages\\system.security.cryptography.protecteddata\\6.0.0\\system.security.cryptography.protecteddata.6.0.0.nupkg.sha512",
     "C:\\Users\\lenovo\\.nuget\\packages\\system.security.permissions\\6.0.0\\system.security.permissions.6.0.0.nupkg.sha512",
     "C:\\Users\\lenovo\\.nuget\\packages\\system.security.principal.windows\\5.0.0\\system.security.principal.windows.5.0.0.nupkg.sha512",
-    "C:\\Users\\lenovo\\.nuget\\packages\\system.text.encodings.web\\5.0.1\\system.text.encodings.web.5.0.1.nupkg.sha512",
     "C:\\Users\\lenovo\\.nuget\\packages\\system.text.json\\5.0.2\\system.text.json.5.0.2.nupkg.sha512",
     "C:\\Users\\lenovo\\.nuget\\packages\\system.windows.extensions\\6.0.0\\system.windows.extensions.6.0.0.nupkg.sha512"
   ],
@@ -29,30 +27,30 @@
       "code": "NU1701",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Package 'Microsoft.AspNet.Razor 3.2.9' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETCoreApp,Version=v3.1'. This package may not be fully compatible with your project.",
+      "message": "Package 'Microsoft.AspNet.Razor 3.2.9' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework 'net5.0-windows7.0'. This package may not be fully compatible with your project.",
       "libraryId": "Microsoft.AspNet.Razor",
       "targetGraphs": [
-        ".NETCoreApp,Version=v3.1"
+        "net5.0-windows7.0"
       ]
     },
     {
       "code": "NU1701",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Package 'Microsoft.AspNet.WebPages 3.2.9' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETCoreApp,Version=v3.1'. This package may not be fully compatible with your project.",
+      "message": "Package 'Microsoft.AspNet.WebPages 3.2.9' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework 'net5.0-windows7.0'. This package may not be fully compatible with your project.",
       "libraryId": "Microsoft.AspNet.WebPages",
       "targetGraphs": [
-        ".NETCoreApp,Version=v3.1"
+        "net5.0-windows7.0"
       ]
     },
     {
       "code": "NU1701",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Package 'Microsoft.Web.Infrastructure 1.0.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETCoreApp,Version=v3.1'. This package may not be fully compatible with your project.",
+      "message": "Package 'Microsoft.Web.Infrastructure 1.0.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework 'net5.0-windows7.0'. This package may not be fully compatible with your project.",
       "libraryId": "Microsoft.Web.Infrastructure",
       "targetGraphs": [
-        ".NETCoreApp,Version=v3.1"
+        "net5.0-windows7.0"
       ]
     }
   ]

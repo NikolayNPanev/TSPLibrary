@@ -1,7 +1,7 @@
 {
   "version": 3,
   "targets": {
-    ".NETCoreApp,Version=v3.1": {
+    "net5.0-windows7.0": {
       "BarcodeLib/2.4.0": {
         "type": "package",
         "dependencies": {
@@ -187,15 +187,6 @@
           "lib/netcoreapp2.1/_._": {}
         }
       },
-      "System.Runtime.CompilerServices.Unsafe/5.0.0": {
-        "type": "package",
-        "compile": {
-          "ref/netstandard2.1/System.Runtime.CompilerServices.Unsafe.dll": {}
-        },
-        "runtime": {
-          "lib/netcoreapp2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
-        }
-      },
       "System.Security.AccessControl/6.0.0": {
         "type": "package",
         "dependencies": {
@@ -245,10 +236,10 @@
           "System.Windows.Extensions": "6.0.0"
         },
         "compile": {
-          "lib/netcoreapp3.1/System.Security.Permissions.dll": {}
+          "lib/net5.0/System.Security.Permissions.dll": {}
         },
         "runtime": {
-          "lib/netcoreapp3.1/System.Security.Permissions.dll": {}
+          "lib/net5.0/System.Security.Permissions.dll": {}
         },
         "build": {
           "buildTransitive/netcoreapp3.1/_._": {}
@@ -273,21 +264,8 @@
           }
         }
       },
-      "System.Text.Encodings.Web/5.0.1": {
-        "type": "package",
-        "compile": {
-          "lib/netcoreapp3.0/System.Text.Encodings.Web.dll": {}
-        },
-        "runtime": {
-          "lib/netcoreapp3.0/System.Text.Encodings.Web.dll": {}
-        }
-      },
       "System.Text.Json/5.0.2": {
         "type": "package",
-        "dependencies": {
-          "System.Runtime.CompilerServices.Unsafe": "5.0.0",
-          "System.Text.Encodings.Web": "5.0.1"
-        },
         "compile": {
           "lib/netcoreapp3.0/System.Text.Json.dll": {}
         },
@@ -598,38 +576,6 @@
         "version.txt"
       ]
     },
-    "System.Runtime.CompilerServices.Unsafe/5.0.0": {
-      "sha512": "ZD9TMpsmYJLrxbbmdvhwt9YEgG5WntEnZ/d1eH8JBX9LBp+Ju8BSBhUGbZMNVHHomWo2KVImJhTDl2hIgw/6MA==",
-      "type": "package",
-      "path": "system.runtime.compilerservices.unsafe/5.0.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "Icon.png",
-        "LICENSE.TXT",
-        "THIRD-PARTY-NOTICES.TXT",
-        "lib/net45/System.Runtime.CompilerServices.Unsafe.dll",
-        "lib/net45/System.Runtime.CompilerServices.Unsafe.xml",
-        "lib/netcoreapp2.0/System.Runtime.CompilerServices.Unsafe.dll",
-        "lib/netcoreapp2.0/System.Runtime.CompilerServices.Unsafe.xml",
-        "lib/netstandard1.0/System.Runtime.CompilerServices.Unsafe.dll",
-        "lib/netstandard1.0/System.Runtime.CompilerServices.Unsafe.xml",
-        "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll",
-        "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.xml",
-        "ref/net461/System.Runtime.CompilerServices.Unsafe.dll",
-        "ref/net461/System.Runtime.CompilerServices.Unsafe.xml",
-        "ref/netstandard1.0/System.Runtime.CompilerServices.Unsafe.dll",
-        "ref/netstandard1.0/System.Runtime.CompilerServices.Unsafe.xml",
-        "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll",
-        "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.xml",
-        "ref/netstandard2.1/System.Runtime.CompilerServices.Unsafe.dll",
-        "ref/netstandard2.1/System.Runtime.CompilerServices.Unsafe.xml",
-        "system.runtime.compilerservices.unsafe.5.0.0.nupkg.sha512",
-        "system.runtime.compilerservices.unsafe.nuspec",
-        "useSharedDesignerContext.txt",
-        "version.txt"
-      ]
-    },
     "System.Security.AccessControl/6.0.0": {
       "sha512": "AUADIc0LIEQe7MzC+I0cl0rAT8RrTAKFHl53yHjEUzNVIaUlhFY11vc2ebiVJzVBuOzun6F7FBA+8KAbGTTedQ==",
       "type": "package",
@@ -778,32 +724,6 @@
         "version.txt"
       ]
     },
-    "System.Text.Encodings.Web/5.0.1": {
-      "sha512": "KmJ+CJXizDofbq6mpqDoRRLcxgOd2z9X3XoFNULSbvbqVRZkFX3istvr+MUjL6Zw1RT+RNdoI4GYidIINtgvqQ==",
-      "type": "package",
-      "path": "system.text.encodings.web/5.0.1",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "Icon.png",
-        "LICENSE.TXT",
-        "THIRD-PARTY-NOTICES.TXT",
-        "lib/net461/System.Text.Encodings.Web.dll",
-        "lib/net461/System.Text.Encodings.Web.xml",
-        "lib/netcoreapp3.0/System.Text.Encodings.Web.dll",
-        "lib/netcoreapp3.0/System.Text.Encodings.Web.xml",
-        "lib/netstandard1.0/System.Text.Encodings.Web.dll",
-        "lib/netstandard1.0/System.Text.Encodings.Web.xml",
-        "lib/netstandard2.0/System.Text.Encodings.Web.dll",
-        "lib/netstandard2.0/System.Text.Encodings.Web.xml",
-        "lib/netstandard2.1/System.Text.Encodings.Web.dll",
-        "lib/netstandard2.1/System.Text.Encodings.Web.xml",
-        "system.text.encodings.web.5.0.1.nupkg.sha512",
-        "system.text.encodings.web.nuspec",
-        "useSharedDesignerContext.txt",
-        "version.txt"
-      ]
-    },
     "System.Text.Json/5.0.2": {
       "sha512": "I47dVIGiV6SfAyppphxqupertT/5oZkYLDCX6vC3HpOI4ZLjyoKAreUoem2ie6G0RbRuFrlqz/PcTQjfb2DOfQ==",
       "type": "package",
@@ -851,7 +771,7 @@
     }
   },
   "projectFileDependencyGroups": {
-    ".NETCoreApp,Version=v3.1": [
+    "net5.0-windows7.0": [
       "BarcodeLib >= 2.4.0",
       "Microsoft.AspNet.WebPages >= 3.2.9",
       "System.Data.OleDb >= 6.0.0"
@@ -879,15 +799,15 @@
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
-        "netcoreapp3.1"
+        "net5.0-windows7.0"
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
-        "netcoreapp3.1": {
-          "targetAlias": "netcoreapp3.1",
+        "net5.0-windows7.0": {
+          "targetAlias": "net5.0-windows",
           "projectReferences": {}
         }
       },
@@ -898,8 +818,8 @@
       }
     },
     "frameworks": {
-      "netcoreapp3.1": {
-        "targetAlias": "netcoreapp3.1",
+      "net5.0-windows7.0": {
+        "targetAlias": "net5.0-windows",
         "dependencies": {
           "BarcodeLib": {
             "target": "Package",
@@ -941,30 +861,30 @@
       "code": "NU1701",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Package 'Microsoft.AspNet.Razor 3.2.9' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETCoreApp,Version=v3.1'. This package may not be fully compatible with your project.",
+      "message": "Package 'Microsoft.AspNet.Razor 3.2.9' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework 'net5.0-windows7.0'. This package may not be fully compatible with your project.",
       "libraryId": "Microsoft.AspNet.Razor",
       "targetGraphs": [
-        ".NETCoreApp,Version=v3.1"
+        "net5.0-windows7.0"
       ]
     },
     {
       "code": "NU1701",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Package 'Microsoft.AspNet.WebPages 3.2.9' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETCoreApp,Version=v3.1'. This package may not be fully compatible with your project.",
+      "message": "Package 'Microsoft.AspNet.WebPages 3.2.9' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework 'net5.0-windows7.0'. This package may not be fully compatible with your project.",
       "libraryId": "Microsoft.AspNet.WebPages",
       "targetGraphs": [
-        ".NETCoreApp,Version=v3.1"
+        "net5.0-windows7.0"
       ]
     },
     {
       "code": "NU1701",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Package 'Microsoft.Web.Infrastructure 1.0.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETCoreApp,Version=v3.1'. This package may not be fully compatible with your project.",
+      "message": "Package 'Microsoft.Web.Infrastructure 1.0.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework 'net5.0-windows7.0'. This package may not be fully compatible with your project.",
       "libraryId": "Microsoft.Web.Infrastructure",
       "targetGraphs": [
-        ".NETCoreApp,Version=v3.1"
+        "net5.0-windows7.0"
       ]
     }
   ]

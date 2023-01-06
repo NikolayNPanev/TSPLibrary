@@ -29,5 +29,9 @@ namespace TSPLibrary
             this.BookID = BookID;
             this.isReturned = isReturned;
         }
+        override
+        public String ToString() {
+            return visitorBarcode + "/" + startDate.ToString() + "/" + endDate.ToString() + "/" + BookID + "/" + isReturned;
+        }
     }
 }

@@ -12,6 +12,7 @@ using System.Data.SqlClient;
 using BarcodeLib;
 using System.Web.Helpers;
 using System.Drawing;
+using System.IO;
 
 namespace TSPLibrary
 {
@@ -167,6 +168,26 @@ namespace TSPLibrary
             catch (Exception ex) {
                 System.Windows.Forms.MessageBox.Show(ex.ToString());
             }
+        }
+
+        private async void button6_Click(object sender, EventArgs e)
+        {
+            Connection db = new Connection();
+
+            String barcode = textBox1.Text;
+
+            Rent[] rentals = db.GetVisitorRentals(barcode);
+
+            String[] fileText = new String[10000];
+            int i = 0;
+            foreach (Rent r in rentals) {
+                if (r != null)
+                {
+                    fileText[i] = r.ToString() + ",\n";
+                    i++;
+                }
+            }
+            await File.WriteAllLinesAsync(barcode+"-rentals.txt", fileText);
         }
     }
 }

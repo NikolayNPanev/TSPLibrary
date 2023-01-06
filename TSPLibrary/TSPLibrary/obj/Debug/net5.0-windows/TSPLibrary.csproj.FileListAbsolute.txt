@@ -45,3 +45,4 @@ D:\TSPLibrary\TSPLibrary\TSPLibrary\obj\Debug\net5.0-windows\TSPLibrary.dll
 D:\TSPLibrary\TSPLibrary\TSPLibrary\obj\Debug\net5.0-windows\ref\TSPLibrary.dll
 D:\TSPLibrary\TSPLibrary\TSPLibrary\obj\Debug\net5.0-windows\TSPLibrary.pdb
 D:\TSPLibrary\TSPLibrary\TSPLibrary\obj\Debug\net5.0-windows\TSPLibrary.genruntimeconfig.cache
+D:\TSPLibrary\TSPLibrary\TSPLibrary\obj\Debug\net5.0-windows\TSPLibrary.csproj.AssemblyReference.cache

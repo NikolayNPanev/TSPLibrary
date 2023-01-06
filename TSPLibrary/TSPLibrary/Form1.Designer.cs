@@ -42,6 +42,7 @@ namespace TSPLibrary
             this.button5 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.button6 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -165,11 +166,22 @@ namespace TSPLibrary
             this.label2.Size = new System.Drawing.Size(0, 15);
             this.label2.TabIndex = 17;
             // 
+            // button6
+            // 
+            this.button6.Location = new System.Drawing.Point(239, 62);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(152, 23);
+            this.button6.TabIndex = 18;
+            this.button6.Text = "Save Rentals To Text File";
+            this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(888, 434);
+            this.Controls.Add(this.button6);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.button5);
@@ -207,6 +219,7 @@ namespace TSPLibrary
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button button6;
     }
 }
 
